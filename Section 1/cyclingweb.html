@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        header{
+            background-image: url(https://wallpaperbat.com/img/146087-bicycle-wallpaper-top-free-bicycle-background.jpg);
+            background-size: cover;
+            height: 60vh;
+            text-align: center;
+            color: white;
+            padding-top: 150px;
+
+        }
+        .hero-title{
+            font-weight: bolder;
+            text-shadow: 1px 2px grey;
+            font-size: 5em;
+            font-family: Cormorant Garamond;
+        }
+        .hero-subtitle{
+            font-weight: bolder;
+            text-shadow: 1px 2px grey;
+            font-size: 20px;
+            font-family:Cormorant Garamond;
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            background-color: #00000037;
+            padding: 30px 300px;
+            color: black;
+        }
+        .social-link{
+            color: rgb(86, 86, 194);
+            text-decoration: none;
+        }
+        .video{
+            width:100%;
+            height:400px;
+            object-fit: cover;
+        }
+        .vid{
+            position: relative;
+            color: white;
+            font-size: 20px;
+
+        }
+        .signup-content{
+            position: absolute;
+            text-align: center;
+        }
+        .feature-card{
+            box-shadow: 2px 2px 5px rgb(255, 201, 100);
+        }
+        .feature-card:hover{
+            border:2px solid black;
+            background-color: rgb(255, 201, 100);
+            color: black;
+        } 
+        .support{
+            font-family:sans-serif;
+            font-weight:700;
+        }
+       
+        .field{
+            text-align: center;
+            margin-top: 30px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="hero-title">RideRevolution</h1><br>
+        <h5 class="hero-subtitle">"Life is like a ten speed bicycle, most of us have gears we have not Used."</h5><br>
+        <button class="btn btn-outline-light">Learn More</button>
+    </header>
+
+    <main>
+        <!--ABOUT-->
+        <section>
+            <div class="container mt-5 mb-5 d-flex justify-content-center">
+                <div class="card about-card bg-dark w-75">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="w-100 h-100" src="https://cdn.dribbble.com/users/1454978/screenshots/3724557/media/d1a465744ace2f162466000560b77cf6.gif" alt="">
+                        </div>
+                        <div class="col-md-6 p-4">
+                            <h4 class="text-center text-white mt-4"style="font-size:40px; font-weight:bolder; text-shadow: 3px 3px grey;" >The Idea Behind</h4>
+                            <p class="text-center text-white mt-3" style="font-size: 20px;">We providing bikers with access to high quality performance carbon bikes that offer a superior riding experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 60px; text-shadow: 2px 2px grey;">Our Benefits</h1>
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-3 text-center">
+                            <i class="fa-3x fa-solid fa-clock"></i><br>
+                            <h3 class="support">SUPPORT 24/7</h3>
+                            <p>We are basically a holistic bicycling community as well as a learning platform. Reach to us between 10 am to 9 pm x 365 days. We’d be happy to help you with any queries that you have!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-3 text-center">
+                            <i class="fa-3x fa-solid fa-bicycle"></i><br>
+                            <h3 class="support">KNOWLEDGE</h3>
+                            <p>Keep yourself informed on the latest news from our world of cycling page, upcoming technologies and innovations used on bicycles and reviews of bicycles from our team of cyclists</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-3 text-center">
+                            <i class="fa-3x fa-solid fa-book-open"></i><br>
+                            <h3 class="support">EVENTS</h3>
+                            <p>We at RideRevolution are masters of conducting events across the Country for every type of cyclist. The events cater to Kids, Beginners, Amateurs and Professionals where you will explore so much</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SIGNUP-->
+        <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 60px; text-shadow: 2px 2px grey;">More About Us</h1>
+        <div class="container vid d-flex justify-content-center align-items-center mb-5">
+            <div class="signup-content " style="z-index: 2;">
+                <h4 style="font-weight: bolder; color: rgb(167, 236, 255); text-shadow: 2px 2px black;">Sign up for 30% discount</h4>
+                <p style="font-weight: bolder; color: rgb(167, 236, 255); text-shadow: 2px 2px black;">Claim a free Merchandise from us</p>
+                <input type="text" class="field" placeholder="Enter Your Email">
+                <button class="btn btn-primary" style="width: 90px; height: 35px; margin-bottom: 7px;">Sign Up</button>
+            </div>
+            <video class="video" src="\Section 1\cycle.mp4" autoplay loop ></video>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h2 class="footer-title">RideRevolution</h2>
+            <p>2024 RideRevolution Pvt Ltd</p>
+        </div>
+        <div>
+            <h3>Visit us at :</h3>
+            <a href="#" class="social-link">Facebook</a><br>
+            <a href="#" class="social-link">Instagram</a><br>
+            <a href="#" class="social-link">Linkedin</a><br>
+            <a href="#" class="social-link">Twitter</a><br>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.about-card',{
+            max: 20,
+            speed: 100,
+            glare: true,
+        }))
+    </script>
+    <script>
+        ScrollReveal().reveal(".hero-title",{
+            delay: 300,
+            origin: "topa",
+            distance: "100px",
+        });
+        ScrollReveal().reveal(".hero-subtitle",{
+            delay: 300,
+            origin: "bottom",
+            distance: "100px",
+        });
+    </script>
+    
+</body>
+</html>
