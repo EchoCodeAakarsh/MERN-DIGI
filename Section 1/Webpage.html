@@ -4,19 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        header{
+            background-image: url(https://cdn.dribbble.com/users/257709/screenshots/6766367/wallpaper_illustration_art_ninja_city_4x.png?resize=640x480&vertical=center);
+            background-size: cover;
+            height: 60vh;
+            text-align: center;
+            color: white;
+            padding-top: 150px;
+
+        }
+        .hero-title{
+            font-weight: bolder;
+            text-shadow: 1px 2px grey;
+            font-size: 5em;
+        }
+        footer{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            background-color: #00000037;
+            padding: 30px 300px;
+            color: black;
+        }
+        .social-link{
+            color: rgb(86, 86, 194);
+            text-decoration: none;
+        }
+        .video{
+            width:100%;
+            height:400px;
+            object-fit: cover;
+        }
+        .vid{
+            position: relative;
+            color: white;
+            font-size: 20px;
+        }
+        .signup-content{
+            position: absolute;
+            text-align: center;
+        }
+        .feature-card{
+            box-shadow: 2px 2px 5px darkgrey;
+        }
+        .feature-card:hover{
+            border:2px solid black;
+            background-color: aqua;
+            color: black;
+        } 
+    </style>
 </head>
 <body>
     <header>
-
+        <h1 class="hero-title">Welcome to my Website</h1><br>
+        <h5 class="hero-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem ratione .</h5>
+        <button class="btn btn-outline-light">Learn More</button>
     </header>
 
     <main>
+        <!--ABOUT-->
+        <section>
+            <div class="container mt-5 mb-5 d-flex justify-content-center">
+                <div class="card about-card bg-dark w-75">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="w-100 h-100" src="https://raw.githubusercontent.com/swapnalshahil/swapnalshahil/master/gifs/coder.gif" alt="">
+                        </div>
+                        <div class="col-md-6 p-4">
+                            <h4 class="text-center text-white"style="font-size:40px; font-weight:bolder;" >About Us</h4>
+                            <p class="text-center text-white mt-2" style="font-size: 20px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum praesentium nemo accusamus sequi voluptatibus laboriosam?Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-5">
+            <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 60px;">Our Features</h1>
+            <div class="container d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card feature-card p-3 text-center">
+                            <i class="fa-3x fa-brands fa-apple"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, suscipit?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-3 text-center">
+                            <i class="fa-3x fa-brands fa-apple"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, suscipit?</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card feature-card p-3 text-center">
+                            <i class="fa-3x fa-brands fa-apple"></i>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, suscipit?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!--SIGNUP-->
+        <h1 class="text-center mb-5" style="font-weight: bolder; font-size: 60px;">Want to learn More</h1>
+        <div class="container vid d-flex justify-content-center align-items-center mb-5">
+            <div class="signup-content " style="z-index: 2;">
+                <h4>Sign up for 30% discount</h4>
+                <p>Want to get an instant discount for your next purchase</p>
+                <input type="text" placeholder="Enter your Email">
+                <button class="btn btn-primary" style="width: 90px; height: 40px;">Sign Up</button>
+            </div>
+            <video class="video" src="/Section 1/sea.mp4" autoplay loop ></video>
+        </div>
     </main>
 
     <footer>
-
+        <div>
+            <h2 class="footer-title">My Website Name</h2>
+            <p>2024 Company Name</p>
+        </div>
+        <div>
+            <h3>Visit us at :</h3>
+            <a href="#" class="social-link">Facebook</a><br>
+            <a href="#" class="social-link">Instagram</a><br>
+            <a href="#" class="social-link">Linkedin</a><br>
+            <a href="#" class="social-link">Twitter</a><br>
+        </div>
     </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll('.about-card',{
+            max: 20,
+            speed: 100,
+            glare: true,
+        }))
+    </script>
+    <script>
+        ScrollReveal().reveal(".hero-title",{
+            delay: 300,
+            origin: "top",
+            distance: "100px",
+        });
+        ScrollReveal().reveal(".hero-subtitle",{
+            delay: 300,
+            origin: "bottom",
+            distance: "100px",
+        });
+    </script>
     
 </body>
 </html>
